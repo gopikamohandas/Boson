@@ -1,0 +1,58 @@
+body{
+    /* background-image: url(../static/images/sky2.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+ h2{
+    position: relative;
+    top: 15vh;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+ h3{
+         margin: 0 auto;
+         width: fit-content;
+         color: white;
+     }
+     table{
+         margin: 0 auto;
+         width: 70%;
+         border-radius: 20px;
+         border-collapse: separate;
+         border: 2px solid rgb(144, 202, 221);
+         position: relative;
+         top: 15vh;
+        
+     }
+     table td, table th{
+         padding: 20px ;
+         /* border: 1px solid black; */
+         /* padding-left: 25vh; */
+     }
+     input[type="text"], textarea, select[name="Priority"],select[name="Status"]{
+         border-radius: 5px;
+         border: 2px solid rgb(45, 194, 243);
+         width: 100%;
+         padding: 5px;
+         
+     }
+     button a{
+        text-decoration: none;
+        color: white;
+     }
+     button {
+        border: none;
+        background: radial-gradient(rgb(110, 177, 253),rgb(47, 166, 245));
+        padding: 10px 20px;
+        color: white;
+        border-radius: 10px;
+        cursor: grab;
+        transition: transform 0.5s ease;
+        
+    }
+    button:hover{
+        transform: scale(1.05);
+        
+    }

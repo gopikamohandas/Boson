@@ -1,0 +1,35 @@
+{% extends 'nav.html' %}
+{% block content %}
+    {% load static %}
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static '../static/css/main.css' %}">
+        <title>main</title>
+    </head>
+    <body>
+        
+            <h2>Todo List</h2>
+            <ul>
+                {% for i in objtodo %}
+                    <li>
+                        <h3>{{ i.Title|truncatewords:10 }}</h3>
+                        Priority: <strong>{{ i.Priority }}</strong><br><br>
+                        Status: {{ i.Status }}<br><br>
+                        Task Created On: {{ i.Creation_Date}}<br><br>
+                        <button><a href="{% url 'update' i.pk %}">Edit Task</a></button>
+                        <button><a href="{% url 'delete' i.pk %}">Delete Task</a></button>
+                    </li>
+                {% empty %}
+                    <li>No tasks available.</li>
+                {% endfor %}
+            </ul>
+        
+        
+        
+    </body>
+    </html>
+{% endblock %}

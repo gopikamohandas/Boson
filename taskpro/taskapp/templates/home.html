@@ -1,0 +1,23 @@
+
+ {% load static %}       <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>home</title>
+            <link rel="stylesheet" href="../static/css/home.css">
+        </head>
+        <body>
+            
+            <div class="intro">
+                <div class="introtext"><h1>WorkOrbit <br> Keep your tasks in a smooth orbit</h1><p>TaskFlow is a dynamic task management app designed to streamline 
+                    your workflow and boost productivity. Perfect for individuals and teams seeking a seamless way to plan, execute, and succeed!</p>
+                    <button><a class="navbtn" href="{% url 'main' %}">Get Started</a></button>
+                </div>
+                <div class="introimg">
+                    <img src="{% static '../static/img/introimg.jpg' %}" alt="image" width="460px" height="380px">
+                </div>
+            </div>
+            
+        </body>
+        </html>
